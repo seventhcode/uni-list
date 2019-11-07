@@ -1,0 +1,55 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "列表",
+                "disableScroll":true
+			}
+		}
+	    ,{
+            "path" : "pages/longIndex/longIndex",
+            "style" : {
+				"navigationBarTitleText": "长tab",
+				"disableScroll":true
+			}
+        }
+        ,{
+            "path" : "pages/other/other",
+            "style" : {
+            	"navigationBarTitleText": "长tab",
+            	"disableScroll":true
+            }
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#50B7EA",
+		"backgroundColor": "#50B7EA"
+	},
+		"tabBar": {
+		"color": "#cdcdcd",
+		"selectedColor": "#50B7EA",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "短tab",
+				"iconPath": "static/index_change.png",
+				"selectedIconPath": "static/index.png"
+			},
+			{
+				"pagePath": "pages/longIndex/longIndex",
+				"text": "长tab",
+				"iconPath": "static/index_change.png",
+				"selectedIconPath": "static/index.png"
+			},
+			{
+				"pagePath": "pages/other/other",
+				"text": "其他",
+				"iconPath": "static/index_change.png",
+				"selectedIconPath": "static/index.png"
+			}
+		]
+	}
+}

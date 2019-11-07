@@ -71,25 +71,25 @@
     		};
     
 #html 点击反馈组件说明#
-    <view class="container999" @click="conClick">
-    <clickCircle ref="clickCircle"></clickCircle>
-    <view>
-    //script
-    // 引入tab
-    import clickCircle from "../../components/clickCircle.vue"
-    export default {
-    components: {
-    clickCircle
-    },
-    data() {
-    return {
-    
-    }
-    },
-    methods:{
-    // 点击反馈事件
-    conClick(e) {
-    this.$refs.clickCircle.conClick(e);
-    }
-    }
-    };
+		    <view class="container999" @click="conClick">
+		    <clickCircle ref="clickCircle"></clickCircle>
+		    <view>
+		    //script
+		    // 引入tab
+		    import clickCircle from "../../components/clickCircle.vue"
+		    export default {
+		    components: {
+		    clickCircle
+		    },
+		    data() {
+		    return {
+		    
+		    }
+		    },
+		    methods:{
+		    // 点击反馈事件
+		    conClick(e) {
+		    this.$refs.clickCircle.conClick(e);
+		    }
+		    }
+		    };
